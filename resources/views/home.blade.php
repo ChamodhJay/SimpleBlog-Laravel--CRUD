@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('posts.store')}}">
+                    <form method="POST" action="{{ route('posts.store')}}"enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                           <label for="exampleInputEmail1">Post Title</label>
@@ -32,7 +32,11 @@
                           <div class="mb-1 text-muted">
                             
                         </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control" name="thumbnail">
+                        </div>
                         <button type="submit" class="btn btn-primary">Post</button>
+
                       </form>
                 </div>
             </div>

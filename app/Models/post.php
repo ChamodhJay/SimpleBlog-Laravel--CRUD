@@ -13,6 +13,7 @@ class post extends Model
 
         'user_id',
         'title',
-        'description'
+        'description',
+        'thumbnail'
     ];
 }
